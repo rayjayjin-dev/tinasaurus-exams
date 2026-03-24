@@ -7,10 +7,10 @@ const config: Config = {
   tagline: 'TinaCMS와 Docusaurus로 만드는 문서 사이트',
   favicon: 'img/favicon.ico',
 
-  url: 'https://<사용자명>.github.io',
+  url: 'https://example.github.io',
   baseUrl: '/tinasaurus-example-page/',
 
-  organizationName: '<사용자명>',
+  organizationName: 'example',
   projectName: 'tinasaurus-example-page',
 
   onBrokenLinks: 'warn',
@@ -22,6 +22,8 @@ const config: Config = {
     defaultLocale: 'ko',
     locales: ['ko'],
   },
+
+  plugins: ['./src/plugins/tailwind-plugin.cjs'],
 
   presets: [
     [
@@ -49,7 +51,7 @@ const config: Config = {
           label: '문서',
         },
         {
-          href: 'https://github.com/<사용자명>/tinasaurus-example-page',
+          href: 'https://github.com/example/tinasaurus-example-page',
           label: 'GitHub',
           position: 'right',
         },
@@ -85,7 +87,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/<사용자명>/tinasaurus-example-page',
+              href: 'https://github.com/example/tinasaurus-example-page',
             },
           ],
         },

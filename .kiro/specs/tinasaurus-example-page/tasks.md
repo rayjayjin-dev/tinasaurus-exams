@@ -6,7 +6,7 @@ Tinasaurus(TinaCMS + Docusaurus) 기반 예제 문서 사이트를 구축하고,
 
 ## Tasks
 
-- [ ] 1. Tinasaurus 프로젝트 초기화 및 핵심 설정
+- [x] 1. Tinasaurus 프로젝트 초기화 및 핵심 설정
   - [x] 1.1 프로젝트 디렉토리 구조 생성 및 `package.json` 작성
     - Tinasaurus 템플릿 기반 디렉토리 구조(`docs/`, `src/`, `static/`, `tina/`) 생성
     - `package.json`에 Docusaurus, TinaCMS, React 등 핵심 의존성 명시
@@ -26,54 +26,54 @@ Tinasaurus(TinaCMS + Docusaurus) 기반 예제 문서 사이트를 구축하고,
     - `docs` 컬렉션 스키마 정의(name, label, path, format, fields)
     - _Requirements: 1.1, 1.2_
 
-  - [~] 1.4 `sidebars.ts` 사이드바 설정 파일 작성
+  - [x] 1.4 `sidebars.ts` 사이드바 설정 파일 작성
     - 자동 생성 사이드바 또는 수동 사이드바 항목 정의
     - 예제 문서 카테고리 구조 반영
     - _Requirements: 2.3_
 
-  - [~] 1.5 `tsconfig.json` TypeScript 설정 파일 작성
+  - [x] 1.5 `tsconfig.json` TypeScript 설정 파일 작성
     - Docusaurus 프로젝트에 적합한 TypeScript 컴파일러 옵션 설정
     - _Requirements: 1.1_
 
-- [ ] 2. Tailwind CSS 통합 설정
-  - [ ] 2.1 Tailwind CSS 의존성 추가 및 설정 파일 작성
+- [x] 2. Tailwind CSS 통합 설정
+  - [x] 2.1 Tailwind CSS 의존성 추가 및 설정 파일 작성
     - `package.json`에 `tailwindcss`, `postcss`, `autoprefixer` devDependencies 추가
     - `tailwind.config.js` 작성: content 경로, darkMode(`['class', '[data-theme="dark"]']`), `corePlugins.preflight: false`
     - `postcss.config.js` 작성: tailwindcss, autoprefixer 플러그인 등록
     - _Requirements: 7.1, 7.2, 7.3, 7.5_
 
-  - [ ] 2.2 Docusaurus Tailwind CSS 통합 플러그인 작성
+  - [x] 2.2 Docusaurus Tailwind CSS 통합 플러그인 작성
     - `src/plugins/tailwind-plugin.cjs` 파일 생성
     - `configurePostCss` 메서드로 PostCSS 파이프라인에 Tailwind 통합
     - `docusaurus.config.ts`의 `plugins` 배열에 플러그인 경로 등록
     - _Requirements: 7.6_
 
-  - [ ] 2.3 `src/css/custom.css`에 Tailwind 디렉티브 추가
+  - [x] 2.3 `src/css/custom.css`에 Tailwind 디렉티브 추가
     - `@tailwind base`, `@tailwind components`, `@tailwind utilities` 디렉티브 추가
     - Docusaurus 기본 CSS 변수(`:root`, `[data-theme='dark']`) 유지
     - _Requirements: 7.4, 7.7_
 
-- [ ] 3. 홈페이지 구현
-  - [ ] 3.1 `src/pages/index.tsx` 홈페이지 컴포넌트 작성
+- [x] 3. 홈페이지 구현
+  - [x] 3.1 `src/pages/index.tsx` 홈페이지 컴포넌트 작성
     - Docusaurus `Layout` 컴포넌트를 활용한 페이지 구조
     - 사이트 목적 설명 소개 텍스트 표시
     - 예제 문서 페이지로 이동하는 링크/버튼 제공
     - Tailwind 유틸리티 클래스를 활용한 레이아웃 스타일링
     - _Requirements: 3.1, 3.2, 3.3_
 
-  - [ ] 3.2 `src/components/HomepageFeatures/index.tsx` 기능 소개 컴포넌트 작성
+  - [x] 3.2 `src/components/HomepageFeatures/index.tsx` 기능 소개 컴포넌트 작성
     - 사이트 주요 기능을 소개하는 카드형 컴포넌트
     - `styles.module.css` CSS 모듈과 Tailwind 유틸리티 클래스 병행 사용
     - _Requirements: 3.1, 6.1, 6.2_
 
-- [ ] 4. 예제 문서 콘텐츠 작성
-  - [ ] 4.1 `docs/intro.md` 소개 문서 작성
+- [x] 4. 예제 문서 콘텐츠 작성
+  - [x] 4.1 `docs/intro.md` 소개 문서 작성
     - YAML 프론트매터(title, sidebar_position) 포함
     - Tinasaurus 소개 본문 텍스트 작성
     - 최소 하나의 코드 블록 포함
     - _Requirements: 2.1, 2.2, 2.4_
 
-  - [ ] 4.2 `docs/examples/_category_.json` 카테고리 설정 및 예제 문서 작성
+  - [x] 4.2 `docs/examples/_category_.json` 카테고리 설정 및 예제 문서 작성
     - `_category_.json`으로 사이드바 카테고리(label, position) 설정
     - `docs/examples/markdown-features.md` 작성: 마크다운 기능 시연(제목, 목록, 링크, 이미지 등)
     - `docs/examples/code-blocks.md` 작성: 코드 블록 기능 시연(구문 강조, 라인 번호 등)
@@ -87,7 +87,7 @@ Tinasaurus(TinaCMS + Docusaurus) 기반 예제 문서 사이트를 구축하고,
     - Tag: `Feature: tinasaurus-example-page, Property 1: 예제 문서 콘텐츠 완전성`
     - **Validates: Requirements 2.1, 2.2**
 
-- [ ] 5. 체크포인트 - 로컬 빌드 검증
+- [x] 5. 체크포인트 - 로컬 빌드 검증
   - 모든 설정 파일과 콘텐츠가 올바르게 작성되었는지 확인
   - `npm run build` 실행하여 정적 빌드가 오류 없이 완료되는지 검증
   - Ensure all tests pass, ask the user if questions arise.
