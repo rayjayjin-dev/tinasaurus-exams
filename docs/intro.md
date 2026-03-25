@@ -3,7 +3,7 @@ title: Tinasaurus 소개 업데이트
 sidebar_position: 1
 ---
 
-# Tinasaurus 소개
+# Tinasaurus 소개 업데이트 2
 
 Tinasaurus는 **TinaCMS**와 **Docusaurus**를 결합한 문서 사이트 생성기입니다. Docusaurus의 강력한 정적 사이트 생성 기능과 TinaCMS의 시각적 콘텐츠 편집 기능을 하나로 통합하여, 개발자가 마크다운 기반의 문서 사이트를 손쉽게 구축하고 관리할 수 있도록 도와줍니다.
 
