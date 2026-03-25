@@ -7,11 +7,11 @@ const config: Config = {
   tagline: 'TinaCMS와 Docusaurus로 만드는 문서 사이트',
   favicon: 'img/favicon.svg',
 
-  url: 'https://example.github.io',
-  baseUrl: '/tinasaurus-example-page/',
+  url: 'https://rayjayjin-dev.github.io',
+  baseUrl: '/tinasaurus-exams/',
 
-  organizationName: 'rayjayjin-dev-org',
-  projectName: 'tinasaurus-example-page',
+  organizationName: 'rayjayjin-dev',
+  projectName: 'tinasaurus-exams',
 
   onBrokenLinks: 'warn',
 
@@ -60,7 +60,7 @@ const config: Config = {
           label: '문서',
         },
         {
-          href: 'https://github.com/example/tinasaurus-example-page',
+          href: 'https://github.com/rayjayjin-dev/tinasaurus-exams',
           label: 'GitHub',
           position: 'right',
         },
@@ -96,7 +96,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/example/tinasaurus-example-page',
+              href: 'https://github.com/rayjayjin-dev/tinasaurus-exams',
             },
           ],
         },
