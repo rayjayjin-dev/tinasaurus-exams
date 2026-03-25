@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Tinasaurus 예제 사이트',
   tagline: 'TinaCMS와 Docusaurus로 만드는 문서 사이트',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
 
   url: 'https://example.github.io',
   baseUrl: '/tinasaurus-example-page/',
@@ -14,7 +14,12 @@ const config: Config = {
   projectName: 'tinasaurus-example-page',
 
   onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
 
   trailingSlash: false,
 
@@ -43,6 +48,10 @@ const config: Config = {
   themeConfig: {
     navbar: {
       title: 'Tinasaurus 예제',
+      logo: {
+        alt: 'Tinasaurus 로고',
+        src: 'img/logo.svg',
+      },
       items: [
         {
           type: 'docSidebar',

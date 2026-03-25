@@ -92,8 +92,8 @@ Tinasaurus(TinaCMS + Docusaurus) 기반 예제 문서 사이트를 구축하고,
   - `npm run build` 실행하여 정적 빌드가 오류 없이 완료되는지 검증
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 6. GitHub Actions 배포 워크플로우 구성
-  - [ ] 6.1 `.github/workflows/deploy.yml` 워크플로우 파일 작성
+- [x] 6. GitHub Actions 배포 워크플로우 구성
+  - [x] 6.1 `.github/workflows/deploy.yml` 워크플로우 파일 작성
     - `push` → `main` 브랜치 트리거 설정
     - `permissions` 설정(contents: read, pages: write, id-token: write)
     - 빌드 잡 정의: checkout → setup-node → npm install → npm run build → GitHub Pages 배포
@@ -106,12 +106,12 @@ Tinasaurus(TinaCMS + Docusaurus) 기반 예제 문서 사이트를 구축하고,
     - permissions 설정 검증
     - _Requirements: 5.1, 5.2, 5.3_
 
-- [ ] 7. 정적 리소스 및 통합 마무리
-  - [ ] 7.1 `static/img/` 디렉토리에 기본 이미지 리소스 배치
+- [x] 7. 정적 리소스 및 통합 마무리
+  - [x] 7.1 `static/img/` 디렉토리에 기본 이미지 리소스 배치
     - 파비콘, 로고 등 기본 정적 이미지 파일 배치
     - _Requirements: 1.1_
 
-  - [ ] 7.2 전체 컴포넌트 연결 및 설정 최종 확인
+  - [x] 7.2 전체 컴포넌트 연결 및 설정 최종 확인
     - `docusaurus.config.ts`에 모든 플러그인(Tailwind 포함) 등록 확인
     - 사이드바 설정과 실제 문서 경로 일치 확인
     - 홈페이지에서 예제 문서로의 네비게이션 동작 확인
@@ -126,7 +126,7 @@ Tinasaurus(TinaCMS + Docusaurus) 기반 예제 문서 사이트를 구축하고,
     - Tailwind 플러그인 파일 존재 및 `configurePostCss` 메서드 구현 검증
     - _Requirements: 1.2, 1.3, 6.3, 7.1, 7.2, 7.3, 7.5, 7.6_
 
-- [ ] 8. 최종 체크포인트 - 전체 빌드 및 테스트 검증
+- [x] 8. 최종 체크포인트 - 전체 빌드 및 테스트 검증
   - 모든 테스트가 통과하는지 확인
   - `npm run build`로 최종 정적 빌드 성공 검증
   - Ensure all tests pass, ask the user if questions arise.

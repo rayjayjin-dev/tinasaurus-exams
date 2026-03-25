@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="200" height="50">
+  <rect x="0" y="5" width="40" height="40" rx="8" fill="#2e8555"/>
+  <text x="20" y="35" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="white" text-anchor="middle">T</text>
+  <text x="50" y="35" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#2e8555">Tinasaurus</text>
+</svg>
