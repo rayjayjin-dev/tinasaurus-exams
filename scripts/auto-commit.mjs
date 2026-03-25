@@ -26,7 +26,7 @@ function gitCommitAndPush() {
     execSync(`git commit -m "docs: 콘텐츠 자동 저장 (${timestamp})"`, { stdio: 'inherit' });
 
     console.log('[auto-commit] push 중...');
-    execSync('git push', { stdio: 'inherit' });
+    execSync('git push origin HEAD', { stdio: 'inherit' });
     console.log('[auto-commit] push 완료');
   } catch (err) {
     console.error('[auto-commit] 오류:', err.message);
