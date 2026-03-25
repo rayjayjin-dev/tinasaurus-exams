@@ -5,6 +5,8 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
+    "dev": "tinacms dev -c \"docusaurus start --host 0.0.0.0\"",
+    "dev:auto": "node scripts/auto-commit.mjs & tinacms dev -c \"docusaurus start --host 0.0.0.0\"",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
@@ -17,18 +19,19 @@
     "@docusaurus/core": "^3.7.0",
     "@docusaurus/preset-classic": "^3.7.0",
     "@mdx-js/react": "^3.0.0",
+    "@tinacms/cli": "^1.6.0",
     "clsx": "^2.1.0",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tinacms": "^2.4.0",
-    "@tinacms/cli": "^1.6.0"
+    "tinacms": "^2.4.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.7.0",
     "@docusaurus/tsconfig": "^3.7.0",
     "@docusaurus/types": "^3.7.0",
     "autoprefixer": "^10.4.0",
+    "chokidar": "^5.0.0",
     "postcss": "^8.4.0",
     "tailwindcss": "^3.4.0",
     "typescript": "~5.6.0"
