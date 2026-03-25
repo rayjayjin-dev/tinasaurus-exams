@@ -10,7 +10,7 @@ const config: Config = {
   url: 'https://example.github.io',
   baseUrl: '/tinasaurus-example-page/',
 
-  organizationName: 'example',
+  organizationName: 'rayjayjin-dev-org',
   projectName: 'tinasaurus-example-page',
 
   onBrokenLinks: 'warn',
