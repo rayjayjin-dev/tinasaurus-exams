@@ -1,5 +1,5 @@
 ---
-title: Tinasaurus 소개 업데이트
+title: Tinasaurus 소개 업데이트 1
 sidebar_position: 1
 ---
 
